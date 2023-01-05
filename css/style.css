@@ -1,0 +1,322 @@
+html, body {
+  height: 100%;
+  width: 100%;
+
+}
+* { 
+    box-sizing: border-box;
+  } 
+  
+ 
+/* Universal selector - Selects every tag */
+* {
+	margin: 0;
+	padding: 0;
+/* 	border: 1px solid red; */
+}
+
+body {
+	margin: 0;
+    /*  ---------------------------------background image------------------------------------  */
+        
+		background-image: url(../images/WebsiteBackNoHello.jpg); 
+        background-repeat: no-repeat;
+        background-size: 100%;
+    
+    /*  --------------------fonts-------------------  */
+    
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 48 px;
+    }
+    
+/*     h2 {
+        color: black; not using now
+} */
+    
+	h4 {
+		font-family: 'Open Sans', sans-serif;
+		margin-top: 760px;
+		/* smargin-left: 176px; */
+		margin-bottom: 18px;
+		color: #6d85a8;
+	} 
+
+    h1 {
+        
+		font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+		font-weight: lighter;
+        color: #6d85a8;
+		margin-top: 500px;
+        margin-left: 176px;
+
+		/* border: 1px solid magenta; */
+		
+    }
+/*  ---------------------------Script Font-------------------------------------------  */
+
+	#homeIntro {
+		font-family: 'Mrs Saint Delafield', cursive;
+		font-size: 120px;
+		margin-bottom: 0px;
+		/* margin-left: 176px; */
+
+	
+	}	
+/*  ___________________________Navigation Bars____________________________________  */
+    /* The navbar container */
+	.hide {
+		display: none;
+	}
+	
+	
+	#hamburgerIcon {
+		width: 60px;
+		margin-bottom: -10px;
+	}
+
+	/* Vertical Navigation Bar  */
+	.verticalNavBar {
+		border: 1px solid magenta;
+		width: 300px;
+		float: right;
+
+	}
+
+	.verticalNavBar ul li {
+		border: 1px solid greenyellow;
+		display: block;
+		text-align: center;
+	}
+
+	.verticalNavBar ul {
+		border: 10px solid #f07746;
+		background-color: #f07746;
+		opacity: 0.80;
+	}
+
+	.topnav {
+		border: 1px solid black;
+		overflow: hidden;
+		/* background-color: #6d85a8; */
+		width: 100%;
+		height: 25%;
+		padding: 2%;
+		align-items: flex-start;
+		align-content: center;
+		display: inline-flexbox;
+		color: white;
+		font-size: 28px;
+		margin: 0px 0 0 0;/* Top right bottom left */
+	}
+
+/* Clear floats after the columns */
+.logoBar:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+	#logoBar {
+		border: 1px solid magenta;
+		float: left;
+		margin-top: 0;
+		/* width: cover; */
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+
+		/* display: inline-flexbox; */
+		display: inline;
+		justify-content: flex-start;
+		clear: both;
+
+	}
+
+	/* Class selector */
+	 /* .yellowbar { 
+		background-color: #FAD7A0;
+		width: 100%;
+		height: 15%;
+	} */
+	
+		
+			/* Grouped selectors */
+			.topnav, li {
+		/* 		border: 1px solid magenta; */
+			}
+		
+			/* Descendant selectors - Links inside .topnav */
+			.topnav a {
+				color: white;
+				text-decoration: none;
+			}
+		
+			.topnav a:hover {
+				text-decoration: underline;
+				color: #FAD7A0;
+			}
+		
+			/* Descendant selectors */
+			.topnav ul {
+		/* 		border: 1px solid black; */
+				text-align: right;
+				padding: 0 5% 0 0; /* Top right bottom left */
+			}
+		
+			/* The descendant selector matches all elements that are descendants of a specified element. */
+			.topnav li {
+				list-style-type: none;
+				display: inline;
+				margin: 0 20px 0 20px;
+			}
+			
+/*----------------------------body copy-------------------------------------  */
+    
+    /* Type selector - a specific type of tag */  
+    p {
+     	/* margin-top: 450px; */
+      	margin-bottom: 140px;
+      	margin-right: auto; 
+      	margin-left: auto; 
+		font-size: 24px;
+		width: 80%;
+		border: 1px solid magenta;
+    }
+
+	.printSamples {
+		margin: 0 auto 0 auto;
+		display: block;
+	}
+ /*  --------------------------------------Contact page--------------------------------------------  */
+ .contact {
+		/* border: 1px solid pink;  */
+		margin-left: 176px;
+		margin-top: 600px;
+		/*margin: 800px 40px 400px 176px; Top right bottom left */
+	}    
+
+
+ /*  --------------------------------------video page--------------------------------------------  */
+	
+
+#mainVideo {
+	border: 5px solid #f07746;
+	width: 400px;
+/* 	height: 700px; */
+/* 	border-radius: 50%; */
+	margin: 0 auto 0 auto;
+	display: block;
+}
+/*  ---------------------------------------------Table------------------------------------------------  */
+
+#myTable {
+	/* border: 3px solid black; */
+}
+
+.myTable {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 600px;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* border: 3px solid #f07746; */
+	/* background-color: B9CBDE; */
+
+}
+
+th{
+	border: 1px solid black;
+	font-size: larger;
+	color: #6d85a8;
+	background-color: white;
+ }
+ tfoot{
+	background-color: lightblue;
+	padding: 10px;
+	text-align: center;
+	font-size: large;
+ }
+   /*  -------------------------------------------------Footer------------------------------------------------
+     need to fix for some reason not positioning at the bottom like it's supposed to on video page and in all on Safari  */
+   /*  # for id's . for classes */ 
+	#footer {
+	text-align: right;
+	padding: 1.5%;
+	background-color: #f07746;
+	color: black;
+	font-size: small;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+
+}
+
+/* _______________________________  Tablet Styles___________________________________________________________ */
+@media only screen and (min-width: 561px) and (max-width: 1023px) {
+    body {
+        background-color: lightpink;
+        font-size: 30px;
+    }
+	#hamburgerIcon {
+		width: 45px;
+		margin-bottom: -10px;
+	}
+	/* Class selector */
+	.topnav {
+				font-size: 13px;
+				margin: 15px 0 0 0;/* Top right bottom left */
+			}
+	p {
+				font-size: 18px;
+		}
+}
+
+
+/* Mobile Styles  */
+@media (max-width: 560px) {
+    body {
+        background-color: lightgreen;
+        font-size: 12px;
+		/* background-image: url(../images/WebsiteBackNoHello.jpg);
+		background-size: 100%; */
+    }
+	p {
+		font-size: 12px;
+}
+.topnav {
+	display: none;
+}
+#hamburgerIcon {
+	width: 30px;
+	margin-bottom: -10px;
+}
+/* Vertical Navigation Bar  */
+.verticalNavBar {
+	border: 1px solid magenta;
+	width: 300px;
+	float: right;
+
+}
+
+.verticalNavBar ul li {
+	border: 1px solid greenyellow;
+	display: block;
+	text-align: center;
+}
+
+.verticalNavBar ul {
+	border: 10px solid blueviolet;
+	background-color: #f07746;
+	opacity: 0.80;
+}
+	/* .navLinks{
+		font-size: 13px;
+	} */
+}
+
+
+
+
