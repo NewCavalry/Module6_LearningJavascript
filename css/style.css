@@ -36,10 +36,14 @@ body {
     
 	h4 {
 		font-family: 'Open Sans', sans-serif;
-		margin-top: 760px;
+		margin-top: 440px; 
 		/* smargin-left: 176px; */
-		margin-bottom: 18px;
+		margin-bottom: 12px;
 		color: #6d85a8;
+		text-align: center;
+		font-size: 48px;
+		font-weight: 200;
+
 	} 
 
     h1 {
@@ -48,8 +52,8 @@ body {
         font-size: 36px;
 		font-weight: lighter;
         color: #6d85a8;
-		margin-top: 500px;
-        margin-left: 176px;
+		margin-top: 400px;
+        /* margin-left: 176px; */
 
 		/* border: 1px solid magenta; */
 		
@@ -60,6 +64,10 @@ body {
 		font-family: 'Mrs Saint Delafield', cursive;
 		font-size: 120px;
 		margin-bottom: 0px;
+		text-align: center;
+		padding: 50px;
+		border: 1px solid greenyellow;
+
 		/* margin-left: 176px; */
 
 	
@@ -284,7 +292,7 @@ th{
 		background-size: 100%; */
     }
 	p {
-		font-size: 12px;
+		font-size: 13px;
 }
 .topnav {
 	display: none;
