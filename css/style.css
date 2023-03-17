@@ -21,6 +21,7 @@ body {
         
 		background-image: url(../images/WebsiteBackNoHello.jpg); 
         background-repeat: no-repeat;
+		background-attachment: fixed; 
         background-size: 100%;
     
     /*  --------------------fonts-------------------  */
@@ -36,13 +37,13 @@ body {
     
 	h4 {
 		font-family: 'Open Sans', sans-serif;
-		margin-top: 440px; 
-		/* smargin-left: 176px; */
-		margin-bottom: 12px;
+		/* margin-top: 500px; 
+		margin-left: 176px; */
+		margin-bottom: 30px;
 		color: #6d85a8;
-		text-align: center;
-		font-size: 48px;
-		font-weight: 200;
+		/* text-align: center; */
+		font-size: 42px;
+		font-weight: 300;
 
 	} 
 
@@ -54,7 +55,6 @@ body {
         color: #6d85a8;
 		margin-top: 400px;
         /* margin-left: 176px; */
-
 		/* border: 1px solid magenta; */
 		
     }
@@ -78,10 +78,17 @@ body {
 		display: none;
 	}
 	
+	.navList {
+		border: 1px solid green;
+	}
 	
 	#hamburgerIcon {
 		width: 60px;
 		margin-bottom: -10px;
+		border: 2px solid blue;
+		position: absolute;
+		top: 2%;
+		right: 2%;
 	}
 
 	/* Vertical Navigation Bar  */
@@ -89,7 +96,6 @@ body {
 		border: 1px solid magenta;
 		width: 300px;
 		float: right;
-
 	}
 
 	.verticalNavBar ul li {
@@ -116,7 +122,12 @@ body {
 		display: inline-flexbox;
 		color: white;
 		font-size: 28px;
-		margin: 0px 0 0 0;/* Top right bottom left */
+		/* margin: 0px 0 0 0;Top right bottom left */
+		/* Position the nav bar at the top of the page */
+		position: fixed;
+		top: 0;
+		z-index: 100;
+		
 	}
 
 /* Clear floats after the columns */
@@ -201,7 +212,7 @@ body {
  .contact {
 		/* border: 1px solid pink;  */
 		margin-left: 176px;
-		margin-top: 600px;
+		margin-top: 60%;
 		/*margin: 800px 40px 400px 176px; Top right bottom left */
 	}    
 
@@ -256,9 +267,11 @@ th{
 	background-color: #f07746;
 	color: black;
 	font-size: small;
-	position: absolute;
-	bottom: 0px;
+	/* position: absolute;
+	bottom: 0px; */
 	width: 100%;
+	clear: both;
+	margin-top: 5%;
 
 }
 
@@ -271,6 +284,7 @@ th{
 	#hamburgerIcon {
 		width: 45px;
 		margin-bottom: -10px;
+		
 	}
 	/* Class selector */
 	.topnav {
@@ -281,9 +295,11 @@ th{
 				font-size: 18px;
 		}
 }
+h4 {
+	font-size: 30px;
+}
 
-
-/* Mobile Styles  */
+/* ------------------- Mobile Styles-------------------------------  */
 @media (max-width: 560px) {
     body {
         background-color: lightgreen;
@@ -294,11 +310,15 @@ th{
 	p {
 		font-size: 13px;
 }
-.topnav {
+h4 {
+	font-size: 36px;
+}
+
+.navList {
 	display: none;
 }
 #hamburgerIcon {
-	width: 30px;
+	width: 50px;
 	margin-bottom: -10px;
 }
 /* Vertical Navigation Bar  */
@@ -306,7 +326,6 @@ th{
 	border: 1px solid magenta;
 	width: 300px;
 	float: right;
-
 }
 
 .verticalNavBar ul li {
