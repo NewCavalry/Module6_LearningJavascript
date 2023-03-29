@@ -1,351 +1,302 @@
+/* Set the height and width for html and body elements */
 html, body {
-  height: 100%;
-  width: 100%;
-
+  height: 100%; /* 100% height */
+  width: 100%; /* 100% width */
 }
+
+/* Set box-sizing for every element */
 * { 
-    box-sizing: border-box;
-  } 
-  
- 
-/* Universal selector - Selects every tag */
-* {
-	margin: 0;
-	padding: 0;
-/* 	border: 1px solid red; */
+    box-sizing: border-box; /* Use border-box model */
+    margin: 0; /* No margin */
+	padding: 0; /* No padding */
 }
 
+/* Set the basic styles for the body element, including background image and font */
 body {
-	margin: 0;
-    /*  ---------------------------------background image------------------------------------  */
-        
-		background-image: url(../images/WebsiteBackNoHello.jpg); 
-        background-repeat: no-repeat;
-		background-attachment: fixed; 
-        background-size: 100%;
-    
-    /*  --------------------fonts-------------------  */
-    
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        font-size: 48 px;
-    }
-    
-/*     h2 {
-        color: black; not using now
-} */
-    
-	h4 {
-		font-family: 'Open Sans', sans-serif;
-		margin-top: 500px; 
-		/* margin-left: 176px;  */
-		margin-right: auto; 
-		margin-left: auto; 
-		margin-bottom: 30px;
-		color: #6d85a8;
-		text-align: center;
-		font-size: 48px;
-		font-weight: 300;
+	margin: 0; /* No margin */
+    /* Set the background image */
+    background-image: url(../images/WebsiteBackNoHello.jpg); /* Background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+	background-attachment: fixed; /* Fix the background image in place */
+    background-size: 100%; /* Scale the background image to 100% of the container */
 
-	} 
+    /* Set the font properties */
+    font-family: 'Open Sans', sans-serif; /* Font family */
+    font-weight: 300; /* Font weight */
+    font-size: 48px; /* Font size */
+}
 
-    h1 {
-        
-		font-family: 'Open Sans', sans-serif;
-        font-size: 36px;
-		font-weight: lighter;
-        color: #6d85a8;
-		margin-top: 400px;
-        /* margin-left: 176px; */
-		/* border: 1px solid magenta; */
-		
-    }
-/*  ---------------------------Script Font-------------------------------------------  */
 
-	#homeIntro {
-		font-family: 'Mrs Saint Delafield', cursive;
-		font-size: 120px;
-		margin-bottom: 0px;
-		text-align: center;
-		padding: 50px;
-		border: 1px solid greenyellow;
+/* Set the styles for h4 element */
+h4 {
+	font-family: 'Open Sans', sans-serif; /* Font family */
+	margin-top: 440px; /* Margin-top value */
+	margin-bottom: 12px; /* Margin-bottom value */
+	color: #6d85a8; /* Text color */
+	text-align: center; /* Centered text alignment */
+	font-size: 48px; /* Font size */
+	font-weight: 200; /* Font weight */
+}
 
-		/* margin-left: 176px; */
+/* Set the styles for h1 element */
+h1 {
+    font-family: 'Open Sans', sans-serif; /* Font family */
+    font-size: 36px; /* Font size */
+    font-weight: lighter; /* Font weight */
+/*     color: #6d85a8; */
+    color: white;
+/*     border: 1px solid yellow; */
+    margin-top: 10px; /* Margin-top value */
+    margin-bottom: 70px;
+}
 
-	
-	}	
-/*  ___________________________Navigation Bars____________________________________  */
-    /* The navbar container */
-	.hide {
-		display: none;
-	}
-	
-	.navList {
-		border: 1px solid green;
-	}
-	
-	#hamburgerIcon {
-		width: 60px;
-		margin-bottom: -10px;
-		border: 2px solid blue;
-		position: absolute;
-		top: 2%;
-		right: 2%;
-	}
+#scrollableArea {
+    overflow-y: auto;
+    height: 500px;
+}
 
-	/* Vertical Navigation Bar  */
-	.verticalNavBar {
-		border: 1px solid magenta;
-		width: 300px;
-		float: right;
-	}
+/* Set the styles for #homeIntro element */
+#homeIntro {
+    font-family: 'Mrs Saint Delafield', cursive; /* Font family */
+    font-size: 120px; /* Font size */
+    text-align: center; /* Centered text alignment */
+    padding: 5px; /* Padding value */
+/*     border: 2px solid greenyellow; /* Border style */ */
+}
 
-	.verticalNavBar ul li {
-		border: 1px solid greenyellow;
-		display: block;
-		text-align: center;
-	}
+/* Set the styles for the navigation bars */
+/* Hide the element with .hide class */
+.hide {
+    display: none; /* Hide the element */
+}
 
-	.verticalNavBar ul {
-		border: 10px solid #f07746;
-		background-color: #f07746;
-		opacity: 0.80;
-	}
+/* Set the styles for .navList element */
+.navList {
+/*     border: 1px solid green; /* Border style */ */
+}
 
-	.topnav {
-		border: 1px solid black;
-		overflow: hidden;
-		/* background-color: #6d85a8; */
-		width: 100%;
-		height: 25%;
-		padding: 2%;
-		align-items: flex-start;
-		align-content: center;
-		display: inline-flexbox;
-		color: white;
-		font-size: 28px;
-		/* margin: 0px 0 0 0;Top right bottom left */
-		/* Position the nav bar at the top of the page */
-		position: fixed;
-		top: 0;
-		z-index: 100;
-		
-	}
+/* Set the styles for #hamburgerIcon element */
+#hamburgerIcon {
+    width: 60px; /* Width value */
+    margin-bottom: -10px; /* Margin-bottom value */
+/*     border: 2px solid blue; /* Border style */ */
+    position: absolute; /* Position value */
+    top: 2%; /* Top value */
+    right: 2%; /* Right value */
+}
 
-/* Clear floats after the columns */
+/* Set the styles for .verticalNavBar element */
+.verticalNavBar {
+/*     border: 1px solid magenta; /* Border style */ */
+    width: 300px; /* Width value */
+    float: right; /* Float value */
+}
+
+/* Set the styles for .verticalNavBar ul li elements */
+.verticalNavBar ul li {
+/*     border: 1px solid greenyellow; /* Border style */ */
+    display: block; /* Display value */
+    text-align: center; /* Centered text alignment */
+}
+
+/* Set the styles for .verticalNavBar ul elements */
+.verticalNavBar ul {
+    border: 10px solid #f07746; /* Border style */
+    background-color: #f07746; /* Background color */
+    opacity: 0.80; /* Opacity value */
+}
+/* -------------------------------------------------------------------------------- */
+
+/* Set the styles for .topnav element */
+.topnav {
+/*     border: 5px solid black; /* Border style */ */
+    overflow: hidden; /* Overflow value */
+    width: 100%; /* Width value */
+    height: 20%; /* Height value */
+    padding: 2% 2% 0 2%; /* Padding value */
+    align-items: flex-start; /* Align-items value */
+    align-content: center; /* Align-content value */
+    display: inline-flexbox; /* Display value */
+    color: white; /* Text color */
+    font-size: 28px; /* Font size */
+    margin: 0px 0 0 0; /* Margin values */
+/*     background-color: green; */
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* Set the styles for .logoBar:after pseudo-element */
 .logoBar:after {
-	content: "";
-	display: table;
-	clear: both;
+    content: ""; /* Set content value */
+    display: table; /* Set display value */
+    clear: both; /* Clear both floats */
 }
-	#logoBar {
-		border: 1px solid magenta;
-		float: left;
-		margin-top: 0;
-		/* width: cover; */
-		width: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
 
-		/* display: inline-flexbox; */
-		display: inline;
-		justify-content: flex-start;
-		clear: both;
+/* Set the styles for #logoBar element */
+#logoBar {
+/*     border: 1px solid magenta; /* Border style */ */
+    float: left; /* Float value */
+    margin-top: 0; /* Margin-top value */
+    width: 100%; /* Width value */
+    position: absolute; /* Position value */
+    top: 0px; /* Top value */
+    left: 0px; /* Left value */
+    display: inline; /* Display value */
+    justify-content: flex-start; /* Justify-content value */
+    clear: both; /* Clear both floats */
+}
 
-	}
+/* Set the styles for .topnav and li elements */
+.topnav, li {
+    /* No additional styles set for this selector */
+}
 
-	/* Class selector */
-	 /* .yellowbar { 
-		background-color: #FAD7A0;
-		width: 100%;
-		height: 15%;
-	} */
-	
-		
-			/* Grouped selectors */
-			.topnav, li {
-		/* 		border: 1px solid magenta; */
-			}
-		
-			/* Descendant selectors - Links inside .topnav */
-			.topnav a {
-				color: white;
-				text-decoration: none;
-			}
-		
-			.topnav a:hover {
-				text-decoration: underline;
-				color: #FAD7A0;
-			}
-		
-			/* Descendant selectors */
-			.topnav ul {
-		/* 		border: 1px solid black; */
-				text-align: right;
-				padding: 0 5% 0 0; /* Top right bottom left */
-			}
-		
-			/* The descendant selector matches all elements that are descendants of a specified element. */
-			.topnav li {
-				list-style-type: none;
-				display: inline;
-				margin: 0 20px 0 20px;
-			}
-			
-/*----------------------------body copy-------------------------------------  */
-    
-    /* Type selector - a specific type of tag */  
-    p {
-     	/* margin-top: 450px; */
-      	margin-bottom: 140px;
-      	margin-right: auto; 
-      	margin-left: auto; 
-		font-size: 24px;
-		width: 80%;
-		border: 1px solid magenta;
-    }
+/* Set the styles for .topnav a elements */
+.topnav a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove text decoration */
+}
 
-	.printSamples {
-		margin: 0 auto 0 auto;
-		display: block;
-	}
- /*  --------------------------------------Contact page--------------------------------------------  */
- .contact {
-		/* border: 1px solid pink;  */
-		margin-left: 176px;
-		margin-top: 60%;
-		/*margin: 800px 40px 400px 176px; Top right bottom left */
-	}    
+/* Set the styles for .topnav a:hover pseudo-class */
+.topnav a:hover {
+    text-decoration: underline; /* Add underline text decoration */
+    color: #FAD7A0; /* Text color */
+}
 
+/* Set the styles for .topnav ul elements */
+.topnav ul {
+    text-align: right; /* Right-aligned text */
+    padding: 0 5% 0 0; /* Padding values */
+}
 
- /*  --------------------------------------video page--------------------------------------------  */
-	
+/* Set the styles for .topnav li elements */
+.topnav li {
+    list-style-type: none; /* Remove list-style */
+    display: inline; /* Display value */
+    margin: 0 20px 0 20px; /* Margin values */
+}
 
+/* Set the styles for p elements */
+p {
+    margin-bottom: 140px; /* Margin-bottom value */
+    margin-right: auto; /* Center the element horizontally */
+    margin-left: auto; /* Center the element horizontally */
+    font-size: 24px; /* Font size */
+    width: 80%; /* Width value */
+/*     border: 1px solid magenta; /* Border style */ */
+    z-index: 1;
+}
+
+/* Set the styles for .printSamples element */
+.printSamples {
+    margin: 0 auto 0 auto; /* Center the element */
+    display: block; /* Display value */
+}
+
+/* Set the styles for .contact element */
+.contact {
+    margin-left: 176px; /* Margin-left value */
+    margin-top: 600px; /* Margin-top value */
+}
+
+/* Set the styles for #mainVideo element */
 #mainVideo {
-	border: 5px solid #f07746;
-	width: 400px;
-/* 	height: 700px; */
-/* 	border-radius: 50%; */
-	margin: 0 auto 0 auto;
-	display: block;
-}
-/*  ---------------------------------------------Table------------------------------------------------  */
-
-#myTable {
-	/* border: 3px solid black; */
+    border: 5px solid #f07746; /* Border style */
+    width: 400px; /* Width value */
+    margin: 0 auto 0 auto; /* Center the element */
+    display: block; /* Display value */
 }
 
-.myTable {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 600px;
-	/* display: flex; */
-	/* justify-content: center; */
-	/* border: 3px solid #f07746; */
-	/* background-color: B9CBDE; */
-
+/* Set the styles for #myTable and .myTable elements */
+#myTable, .myTable {
+    width: 50%; /* Width value */
+    margin-left: auto; /* Center the element horizontally */
+    margin-right: auto; /* Center the element horizontally */
+    margin-top: 600px; /* Margin-top value */
 }
 
-th{
-	border: 1px solid black;
-	font-size: larger;
-	color: #6d85a8;
-	background-color: white;
- }
- tfoot{
-	background-color: lightblue;
-	padding: 10px;
-	text-align: center;
-	font-size: large;
- }
-   /*  -------------------------------------------------Footer------------------------------------------------
-     need to fix for some reason not positioning at the bottom like it's supposed to on video page and in all on Safari  */
-   /*  # for id's . for classes */ 
-	#footer {
-	text-align: right;
-	padding: 1.5%;
-	background-color: #f07746;
-	color: black;
-	font-size: small;
-	/* position: absolute;
-	bottom: 0px; */
-	width: 100%;
-	clear: both;
-	margin-top: 5%;
-
+/* Set the styles for th elements */
+th {
+    border: 1px solid black; /* Border style */
+    font-size: larger; /* Font size */
+    color: #6d85a8; /* Text color */
+    background-color: white; /* Background color */
 }
 
-/* _______________________________  Tablet Styles___________________________________________________________ */
+/* Set the styles for tfoot elements */
+tfoot {
+    background-color: lightblue; /* Background color */
+    padding: 10px; /* Padding value */
+    text-align: center; /* Centered text */
+    font-size: large; /* Font size */
+}
+
+/* Set the styles for #footer element */
+#footer {
+    text-align: right; /* Right-aligned text */
+    padding: 1.5%; /* Padding value */
+    background-color: #f07746; /* Background color */
+    color: black; /* Text color */
+    font-size: small; /* Font size */
+    position: absolute; /* Position value */
+    bottom: 0px;
+    width: 100%; /* Width value */
+}
+
+/* Set the styles for tablet devices */
 @media only screen and (min-width: 561px) and (max-width: 1023px) {
     body {
-        background-color: lightpink;
-        font-size: 30px;
+        background-color: lightpink; /* Background color */
+        font-size: 30px; /* Font size */
     }
-	#hamburgerIcon {
-		width: 45px;
-		margin-bottom: -10px;
-		
-	}
-	/* Class selector */
-	.topnav {
-				font-size: 13px;
-				margin: 15px 0 0 0;/* Top right bottom left */
-			}
-	p {
-				font-size: 18px;
-		}
-}
-h4 {
-	font-size: 30px;
+    #hamburgerIcon {
+        width: 45px; /* Width value */
+        margin-bottom: -10px; /* Margin-bottom value */
+    }
+    .topnav {
+        font-size: 13px; /* Font size */
+        margin: 15px 0 0 0; /* Margin values */
+    }
+    p {
+        font-size: 18px; /* Font size */
+    }
 }
 
-/* ------------------- Mobile Styles-------------------------------  */
+/* Set the styles for mobile devices */
 @media (max-width: 560px) {
     body {
-        background-color: lightgreen;
-        font-size: 12px;
-		/* background-image: url(../images/WebsiteBackNoHello.jpg);
-		background-size: 100%; */
+        background-color: lightgreen; /* Background color */
+        font-size: 12px; /* Font size */
     }
-	p {
-		font-size: 13px;
+    p {
+        font-size: 13px; /* Font size */
+    }
+    .navList {
+        display: none; /* Hide element */
+    }
+    #hamburgerIcon {
+        width: 50px; /* Width value */
+        margin-bottom: -10px; /* Margin-bottom value */
+    }
+    .verticalNavBar {
+        border: 1px solid magenta; /* Border style */
+        width: 300px; /* Width value */
+        float: right; /* Float value */
+    }
+    .verticalNavBar ul li {
+        border: 1px solid greenyellow; /* Border style */
+        display: block; /* Display value */
+        text-align: center; /* Centered text */
+    }
+    .verticalNavBar ul {
+        border: 10px solid blueviolet; /* Border style */
+        background-color: #f07746; /* Background color */
+        opacity: 0.80; /* Opacity value */
+    }
 }
-h4 {
-	font-size: 36px;
-}
-
-.navList {
-	display: none;
-}
-#hamburgerIcon {
-	width: 50px;
-	margin-bottom: -10px;
-}
-/* Vertical Navigation Bar  */
-.verticalNavBar {
-	border: 1px solid magenta;
-	width: 300px;
-	float: right;
-}
-
-.verticalNavBar ul li {
-	border: 1px solid greenyellow;
-	display: block;
-	text-align: center;
-}
-
-.verticalNavBar ul {
-	border: 10px solid blueviolet;
-	background-color: #f07746;
-	opacity: 0.80;
-}
-	/* .navLinks{
-		font-size: 13px;
-	} */
-}
-
-
-
-

@@ -1,9 +1,9 @@
 //console.log("This is my Javascript learning experience for Module 6");
 var homeIntro = document.getElementById("homeIntro");
+var footerDiv = document.getElementById("footer");
 
-var allIntros = document.getElementsByClassName("introParagraph");
-//alert (allIntros[0].innerHTML);
-var introParagraph = allIntros[0];
+// Grabbing div that contains all the paragraphs. Div had an id called introParagraphDiv in HTML
+var allIntrosDiv = document.getElementById("introParagraphDiv");
 
 var hamburgerIcon = document.getElementById("hamburgerIcon");
 
@@ -12,6 +12,11 @@ var verticalNavBar = document.getElementById("verticalNavBar");
 var firstNameSpan = document.createElement("span");
 var lastNameSpan = document.createElement("span");
 var space = document.createElement("span");
+
+var homeIntroSeconds = 2;
+var homeOutroSeconds = 5;
+var introParagraphH1AndFooterSeconds = 7;
+var millisecondsPerSecond = 1000;
 
 firstNameSpan.innerHTML = "Desirée";
 lastNameSpan.innerHTML = "Girotto";
@@ -29,13 +34,17 @@ function showHomeIntro (){
     homeIntro.removeAttribute("class");
 }
 
-function showIntroParagraphandH1 (){
+function showIntroParagraphH1AndFooter (){
     homeIntro.removeAttribute("class");
     homeIntro.innerHTML = "hello";
-    introParagraph.removeAttribute("class");
+    
+    allIntrosDiv.removeAttribute("class");
+    
     homeIntro.setAttribute("class", "animate__animated animate__fadeIn");
-    introParagraph.setAttribute("class", "animate__animated animate__fadeIn");
-
+    allIntrosDiv.setAttribute("class", "animate__animated animate__fadeIn");
+    
+    footerDiv.removeAttribute("class");
+    footerDiv.setAttribute("class", "animate__animated animate__fadeIn");
 }
 
 function hideHomeIntro (){
@@ -48,17 +57,18 @@ function hideHomeIntro (){
 }
 
 // Hides home intro until animation runs
- homeIntro.setAttribute("class", "hide");
- introParagraph.setAttribute("class", "hide");
+homeIntro.setAttribute("class", "hide");
+allIntrosDiv.setAttribute("class", "hide");
+footerDiv.setAttribute( "class", "hide" );
  // homeIntro.innerHTML="Desirée";
 
 
 // Bring in name/animation element
-var homeIntroTimer = setTimeout(showHomeIntro, 2000);
+var homeIntroTimer = setTimeout(showHomeIntro, homeIntroSeconds * millisecondsPerSecond);
 // clearTimeout (homeIntroTimer);
-var homeOutroTimer = setTimeout(hideHomeIntro, 5000);
+var homeOutroTimer = setTimeout(hideHomeIntro, homeOutroSeconds * millisecondsPerSecond);
 
-var OriginalIntroTimer = setTimeout(showIntroParagraphandH1, 7000);
+var OriginalIntroTimer = setTimeout(showIntroParagraphH1AndFooter, introParagraphH1AndFooterSeconds * millisecondsPerSecond);
 
 // homeIntro.setAttribute("class", "animate__animated animate__fadeInDown");
 
@@ -75,4 +85,14 @@ hamburgerIcon.onclick = function(){
         verticalNavBar.setAttribute("class", "hide"); 
     }
 };
+
+
+
+
+
+
+
+
+
+
 
