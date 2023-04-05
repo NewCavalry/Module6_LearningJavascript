@@ -14,8 +14,8 @@ var lastNameSpan = document.createElement("span");
 var space = document.createElement("span");
 
 var homeIntroSeconds = 2;
-var homeOutroSeconds = 5;
-var introParagraphH1AndFooterSeconds = 7;
+var homeOutroSeconds = 4;
+var introParagraphH1AndFooterSeconds = 6;
 var millisecondsPerSecond = 1000;
 
 firstNameSpan.innerHTML = "Desirée";

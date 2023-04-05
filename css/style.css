@@ -23,7 +23,7 @@ body {
     /* Set the font properties */
     font-family: 'Open Sans', sans-serif; /* Font family */
     font-weight: 300; /* Font weight */
-    font-size: 48px; /* Font size */
+    font-size: 24px; /* Font size */
 }
 
 
@@ -46,13 +46,28 @@ h1 {
 /*     color: #6d85a8; */
     color: white;
 /*     border: 1px solid yellow; */
-    margin-top: 10px; /* Margin-top value */
+    /* margin-top: 1%; */
     margin-bottom: 70px;
+}
+
+/* Set the styles for paragraph elements */
+p {
+    margin-bottom: 4%; 
+    margin-right: auto; /* Center the element horizontally */
+    margin-left: auto; /* Center the element horizontally */
+    font-size: 24px;
+	/* margin-top: 30%; */
+    width: 80%; /* Width value */
+    border: 1px solid magenta; 
+    z-index: 1;
 }
 
 #scrollableArea {
     overflow-y: auto;
-    height: 500px;
+    /* max-height: 100%; */
+    height: 72%;
+
+    border: 10px solid orangered;
 }
 
 /* Set the styles for #homeIntro element */
@@ -60,8 +75,14 @@ h1 {
     font-family: 'Mrs Saint Delafield', cursive; /* Font family */
     font-size: 120px; /* Font size */
     text-align: center; /* Centered text alignment */
-    padding: 5px; /* Padding value */
-/*     border: 2px solid greenyellow; /* Border style */ */
+    padding: 2%; /* Padding value */
+    border: 2px solid greenyellow;  
+    /* margin-top: 100px; */
+}
+
+#introParagraphDiv {
+	font-size: larger;
+	margin-top: 10%;
 }
 
 /* Set the styles for the navigation bars */
@@ -72,36 +93,36 @@ h1 {
 
 /* Set the styles for .navList element */
 .navList {
-/*     border: 1px solid green; /* Border style */ */
+    border: 1px solid green;
 }
 
 /* Set the styles for #hamburgerIcon element */
 #hamburgerIcon {
     width: 60px; /* Width value */
     margin-bottom: -10px; /* Margin-bottom value */
-/*     border: 2px solid blue; /* Border style */ */
+    border: 2px solid blue; 
     position: absolute; /* Position value */
-    top: 2%; /* Top value */
+    top: 3%; /* Top value */
     right: 2%; /* Right value */
 }
 
 /* Set the styles for .verticalNavBar element */
 .verticalNavBar {
-/*     border: 1px solid magenta; /* Border style */ */
+    border: 1px solid magenta;
     width: 300px; /* Width value */
     float: right; /* Float value */
 }
 
 /* Set the styles for .verticalNavBar ul li elements */
 .verticalNavBar ul li {
-/*     border: 1px solid greenyellow; /* Border style */ */
+    border: 1px solid greenyellow;
     display: block; /* Display value */
     text-align: center; /* Centered text alignment */
 }
 
 /* Set the styles for .verticalNavBar ul elements */
 .verticalNavBar ul {
-    border: 10px solid #f07746; /* Border style */
+    border: 5px solid violet; /* Border style */
     background-color: #f07746; /* Background color */
     opacity: 0.80; /* Opacity value */
 }
@@ -109,7 +130,7 @@ h1 {
 
 /* Set the styles for .topnav element */
 .topnav {
-/*     border: 5px solid black; /* Border style */ */
+    border: 5px solid black; /* Border style 
     overflow: hidden; /* Overflow value */
     width: 100%; /* Width value */
     height: 20%; /* Height value */
@@ -119,17 +140,11 @@ h1 {
     display: inline-flexbox; /* Display value */
     color: white; /* Text color */
     font-size: 28px; /* Font size */
+    /* position: fixed;
+    top: 0; */
     margin: 0px 0 0 0; /* Margin values */
 /*     background-color: green; */
 }
-
-
-
-
-
-
-/* -------------------------------------------------------------------------------- */
-
 
 /* Set the styles for .logoBar:after pseudo-element */
 .logoBar:after {
@@ -140,7 +155,7 @@ h1 {
 
 /* Set the styles for #logoBar element */
 #logoBar {
-/*     border: 1px solid magenta; /* Border style */ */
+/*     border: 1px solid magenta; /* Border style */ 
     float: left; /* Float value */
     margin-top: 0; /* Margin-top value */
     width: 100%; /* Width value */
@@ -182,16 +197,6 @@ h1 {
     margin: 0 20px 0 20px; /* Margin values */
 }
 
-/* Set the styles for p elements */
-p {
-    margin-bottom: 140px; /* Margin-bottom value */
-    margin-right: auto; /* Center the element horizontally */
-    margin-left: auto; /* Center the element horizontally */
-    font-size: 24px; /* Font size */
-    width: 80%; /* Width value */
-/*     border: 1px solid magenta; /* Border style */ */
-    z-index: 1;
-}
 
 /* Set the styles for .printSamples element */
 .printSamples {
@@ -203,8 +208,26 @@ p {
 .contact {
     margin-left: 176px; /* Margin-left value */
     margin-top: 600px; /* Margin-top value */
+	font-size: medium;
+}
+input[type="submit"]:hover {
+	background-color: #FAD7A0;
+}
+input[type='text'], input[type='email'] {
+    border:1px solid #6d85a8;
+    width:50%;
+    padding: 5px;
+    /* border-radius: 20px; */
 }
 
+input[type='button'] {
+    background-color:#6d85a8;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
 /* Set the styles for #mainVideo element */
 #mainVideo {
     border: 5px solid #f07746; /* Border style */
@@ -253,11 +276,14 @@ tfoot {
 @media only screen and (min-width: 561px) and (max-width: 1023px) {
     body {
         background-color: lightpink; /* Background color */
-        font-size: 30px; /* Font size */
     }
     #hamburgerIcon {
+        display: block;
         width: 45px; /* Width value */
         margin-bottom: -10px; /* Margin-bottom value */
+    }
+    .navList {
+        display: none; /* Hide element */
     }
     .topnav {
         font-size: 13px; /* Font size */
@@ -281,6 +307,7 @@ tfoot {
         display: none; /* Hide element */
     }
     #hamburgerIcon {
+        display: block;
         width: 50px; /* Width value */
         margin-bottom: -10px; /* Margin-bottom value */
     }
