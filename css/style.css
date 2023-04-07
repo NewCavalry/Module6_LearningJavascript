@@ -1,50 +1,51 @@
 /* Set the height and width for html and body elements */
 html, body {
-  height: 100%; /* 100% height */
-  width: 100%; /* 100% width */
+  height: 100%;
+  width: 100%;
 }
 
 /* Set box-sizing for every element */
 * { 
-    box-sizing: border-box; /* Use border-box model */
-    margin: 0; /* No margin */
-	padding: 0; /* No padding */
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
 }
 
 /* Set the basic styles for the body element, including background image and font */
 body {
 	margin: 0; /* No margin */
     /* Set the background image */
-    background-image: url(../images/WebsiteBackNoHello.jpg); /* Background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-image: url(../images/WebsiteBackNoHello.jpg);
+    background-repeat: no-repeat;
 	background-attachment: fixed; /* Fix the background image in place */
     background-size: 100%; /* Scale the background image to 100% of the container */
 
     /* Set the font properties */
-    font-family: 'Open Sans', sans-serif; /* Font family */
-    font-weight: 300; /* Font weight */
-    font-size: 24px; /* Font size */
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300; 
+    font-size: 24px; 
 }
 
 
 /* Set the styles for h4 element */
 h4 {
-	font-family: 'Open Sans', sans-serif; /* Font family */
-	margin-top: 440px; /* Margin-top value */
-	margin-bottom: 12px; /* Margin-bottom value */
+	font-family: 'Open Sans', sans-serif; 
+	margin-top: 440px;
+	margin-bottom: 12px;
 	color: #6d85a8; /* Text color */
-	text-align: center; /* Centered text alignment */
-	font-size: 48px; /* Font size */
-	font-weight: 200; /* Font weight */
+	text-align: center;
+	font-size: 48px;
+	font-weight: 200;
 }
 
 /* Set the styles for h1 element */
 h1 {
-    font-family: 'Open Sans', sans-serif; /* Font family */
-    font-size: 36px; /* Font size */
-    font-weight: lighter; /* Font weight */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: lighter;
 /*     color: #6d85a8; */
     color: white;
+    /* Border for testing only */ 
 /*     border: 1px solid yellow; */
     /* margin-top: 1%; */
     margin-bottom: 70px;
@@ -57,8 +58,9 @@ p {
     margin-left: auto; /* Center the element horizontally */
     font-size: 24px;
 	/* margin-top: 30%; */
-    width: 80%; /* Width value */
-    border: 1px solid magenta; 
+    width: 80%;
+    /* Border for testing only */ 
+    /* border: 1px solid magenta;  */
     z-index: 1;
 }
 
@@ -66,17 +68,18 @@ p {
     overflow-y: auto;
     /* max-height: 100%; */
     height: 72%;
-
-    border: 10px solid orangered;
+    /* Border for testing only */ 
+    /* border: 10px solid orangered; */
 }
 
 /* Set the styles for #homeIntro element */
 #homeIntro {
-    font-family: 'Mrs Saint Delafield', cursive; /* Font family */
-    font-size: 120px; /* Font size */
-    text-align: center; /* Centered text alignment */
-    padding: 2%; /* Padding value */
-    border: 2px solid greenyellow;  
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 120px;
+    text-align: center;
+    padding: 2%;
+    /* Border for testing only */ 
+    /* border: 2px solid greenyellow;   */
     /* margin-top: 100px; */
 }
 
@@ -93,14 +96,16 @@ p {
 
 /* Set the styles for .navList element */
 .navList {
-    border: 1px solid green;
+    /* Border for testing only */ 
+    /* border: 1px solid green; */
 }
 
 /* Set the styles for #hamburgerIcon element */
 #hamburgerIcon {
     width: 60px; /* Width value */
     margin-bottom: -10px; /* Margin-bottom value */
-    border: 2px solid blue; 
+    /* Border for testing only */
+    /* border: 2px solid blue;  */
     position: absolute; /* Position value */
     top: 3%; /* Top value */
     right: 2%; /* Right value */
@@ -108,41 +113,44 @@ p {
 
 /* Set the styles for .verticalNavBar element */
 .verticalNavBar {
-    border: 1px solid magenta;
-    width: 300px; /* Width value */
-    float: right; /* Float value */
+    /* border: 1px solid magenta; */
+    width: 300px; 
+    float: right; 
 }
 
 /* Set the styles for .verticalNavBar ul li elements */
 .verticalNavBar ul li {
-    border: 1px solid greenyellow;
-    display: block; /* Display value */
-    text-align: center; /* Centered text alignment */
+    /* Border for testing only */ 
+    /* border: 1px solid greenyellow; */
+    display: block; 
+    text-align: center;
 }
 
 /* Set the styles for .verticalNavBar ul elements */
 .verticalNavBar ul {
-    border: 5px solid violet; /* Border style */
-    background-color: #f07746; /* Background color */
+    /* Border for testing only */ 
+    /* border: 5px solid violet;  */
+    background-color: #f07746; 
     opacity: 0.80; /* Opacity value */
 }
 /* -------------------------------------------------------------------------------- */
 
 /* Set the styles for .topnav element */
 .topnav {
-    border: 5px solid black; /* Border style 
-    overflow: hidden; /* Overflow value */
-    width: 100%; /* Width value */
-    height: 20%; /* Height value */
-    padding: 2% 2% 0 2%; /* Padding value */
-    align-items: flex-start; /* Align-items value */
-    align-content: center; /* Align-content value */
-    display: inline-flexbox; /* Display value */
-    color: white; /* Text color */
-    font-size: 28px; /* Font size */
+    /* Border for testing only */ 
+    /* border: 5px solid black; */
+    overflow: hidden;
+    width: 100%; 
+    height: 20%; 
+    padding: 2% 2% 0 2%; 
+    align-items: flex-start; 
+    align-content: center; 
+    display: inline-flexbox; 
+    color: white;
+    font-size: 28px; 
     /* position: fixed;
     top: 0; */
-    margin: 0px 0 0 0; /* Margin values */
+    margin: 0px 0 0 0; 
 /*     background-color: green; */
 }
 
@@ -150,21 +158,23 @@ p {
 .logoBar:after {
     content: ""; /* Set content value */
     display: table; /* Set display value */
-    clear: both; /* Clear both floats */
+    clear: both;
 }
 
 /* Set the styles for #logoBar element */
 #logoBar {
-/*     border: 1px solid magenta; /* Border style */ 
-    float: left; /* Float value */
-    margin-top: 0; /* Margin-top value */
-    width: 100%; /* Width value */
-    position: absolute; /* Position value */
-    top: 0px; /* Top value */
-    left: 0px; /* Left value */
-    display: inline; /* Display value */
-    justify-content: flex-start; /* Justify-content value */
-    clear: both; /* Clear both floats */
+    /* Border for testing only */ 
+/*     border: 1px solid magenta;  */ 
+    float: left;
+    margin-top: 0;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline;
+    justify-content: flex-start;
+    /* Clear both floats */
+    clear: both;
 }
 
 /* Set the styles for .topnav and li elements */
@@ -174,7 +184,7 @@ p {
 
 /* Set the styles for .topnav a elements */
 .topnav a {
-    color: white; /* Text color */
+    color: white;
     text-decoration: none; /* Remove text decoration */
 }
 
@@ -186,28 +196,28 @@ p {
 
 /* Set the styles for .topnav ul elements */
 .topnav ul {
-    text-align: right; /* Right-aligned text */
-    padding: 0 5% 0 0; /* Padding values */
+    text-align: right; 
+    padding: 0 0 0 0; /* Padding values */
 }
 
 /* Set the styles for .topnav li elements */
 .topnav li {
     list-style-type: none; /* Remove list-style */
-    display: inline; /* Display value */
-    margin: 0 20px 0 20px; /* Margin values */
+    display: inline;
+    margin: 0 20px 0 20px;
 }
 
 
 /* Set the styles for .printSamples element */
 .printSamples {
     margin: 0 auto 0 auto; /* Center the element */
-    display: block; /* Display value */
+    display: block; 
 }
 
 /* Set the styles for .contact element */
 .contact {
-    margin-left: 176px; /* Margin-left value */
-    margin-top: 600px; /* Margin-top value */
+    margin-left: 176px;
+    margin-top: 600px;
 	font-size: medium;
 }
 input[type="submit"]:hover {
@@ -230,86 +240,88 @@ input[type='button'] {
 }
 /* Set the styles for #mainVideo element */
 #mainVideo {
-    border: 5px solid #f07746; /* Border style */
-    width: 400px; /* Width value */
+    border: 5px solid #f07746;
+    width: 400px; 
     margin: 0 auto 0 auto; /* Center the element */
-    display: block; /* Display value */
+    display: block;
 }
 
 /* Set the styles for #myTable and .myTable elements */
 #myTable, .myTable {
-    width: 50%; /* Width value */
+    width: 50%;
     margin-left: auto; /* Center the element horizontally */
     margin-right: auto; /* Center the element horizontally */
-    margin-top: 600px; /* Margin-top value */
+    margin-top: 600px;
 }
 
 /* Set the styles for th elements */
 th {
-    border: 1px solid black; /* Border style */
-    font-size: larger; /* Font size */
+    border: 1px solid black;
+    font-size: larger;
     color: #6d85a8; /* Text color */
-    background-color: white; /* Background color */
+    background-color: white;
 }
 
 /* Set the styles for tfoot elements */
 tfoot {
-    background-color: lightblue; /* Background color */
-    padding: 10px; /* Padding value */
-    text-align: center; /* Centered text */
-    font-size: large; /* Font size */
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
 }
 
 /* Set the styles for #footer element */
 #footer {
-    text-align: right; /* Right-aligned text */
-    padding: 1.5%; /* Padding value */
-    background-color: #f07746; /* Background color */
+    text-align: right;
+    padding: 1.5%;
+    background-color: #f07746;
     color: black; /* Text color */
-    font-size: small; /* Font size */
-    position: absolute; /* Position value */
+    font-size: small;
+    position: absolute;
     bottom: 0px;
-    width: 100%; /* Width value */
+    width: 100%;
 }
 
 /* Set the styles for tablet devices */
 @media only screen and (min-width: 561px) and (max-width: 1023px) {
     body {
-        background-color: lightpink; /* Background color */
+        /* Background color for testing only */
+        background-color: lightpink;
     }
     #hamburgerIcon {
         display: block;
-        width: 45px; /* Width value */
+        width: 45px;
         margin-bottom: -10px; /* Margin-bottom value */
     }
     .navList {
         display: none; /* Hide element */
     }
     .topnav {
-        font-size: 13px; /* Font size */
+        font-size: 13px;
         margin: 15px 0 0 0; /* Margin values */
     }
     p {
-        font-size: 18px; /* Font size */
+        font-size: 18px;
     }
 }
 
 /* Set the styles for mobile devices */
 @media (max-width: 560px) {
     body {
-        background-color: lightgreen; /* Background color */
-        font-size: 12px; /* Font size */
+        /* Background color for testing only */
+        background-color: lightgreen;
+        font-size: 12px;
     }
     p {
-        font-size: 13px; /* Font size */
+        font-size: 13px;
     }
     .navList {
         display: none; /* Hide element */
     }
     #hamburgerIcon {
         display: block;
-        width: 50px; /* Width value */
-        margin-bottom: -10px; /* Margin-bottom value */
+        width: 50px;
+        margin-bottom: -10px;
     }
     .verticalNavBar {
         border: 1px solid magenta; /* Border style */
@@ -317,13 +329,14 @@ tfoot {
         float: right; /* Float value */
     }
     .verticalNavBar ul li {
-        border: 1px solid greenyellow; /* Border style */
-        display: block; /* Display value */
-        text-align: center; /* Centered text */
+        border: 1px solid greenyellow;
+        display: block;
+        text-align: center;
     }
     .verticalNavBar ul {
-        border: 10px solid blueviolet; /* Border style */
+        /* Bprder for testing only */
+        border: 10px solid blueviolet;
         background-color: #f07746; /* Background color */
-        opacity: 0.80; /* Opacity value */
+        opacity: 0.80;
     }
 }
