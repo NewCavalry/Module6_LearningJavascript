@@ -15,7 +15,11 @@ var space = document.createElement("span");
 
 var homeIntroSeconds = 2;
 var homeOutroSeconds = 4;
+
 var introParagraphH1AndFooterSeconds = 6;
+var fadeOutHomeIntroSeconds = 5;
+// Adding time (fadeOutHomeIntroSeconds) after introParagraphH1AndFooterSeconds is finished //
+var finalFadeOurHomeIntroSeconds = introParagraphH1AndFooterSeconds + fadeOutHomeIntroSeconds;
 var millisecondsPerSecond = 1000;
 
 firstNameSpan.innerHTML = "Desirée";
@@ -55,7 +59,9 @@ function hideHomeIntro (){
     // lastNameSpan.setAttribute("class", "hide");
 
 }
-
+function fadeOutHomeIntro (){
+    homeIntro.setAttribute("class", "animate__animated animate__fadeOut");
+}
 // Hides home intro until animation runs
 homeIntro.setAttribute("class", "hide");
 allIntrosDiv.setAttribute("class", "hide");
@@ -69,7 +75,8 @@ var homeIntroTimer = setTimeout(showHomeIntro, homeIntroSeconds * millisecondsPe
 var homeOutroTimer = setTimeout(hideHomeIntro, homeOutroSeconds * millisecondsPerSecond);
 
 var OriginalIntroTimer = setTimeout(showIntroParagraphH1AndFooter, introParagraphH1AndFooterSeconds * millisecondsPerSecond);
-
+// fade out homeIntro "Hello"//
+var fadeOutHomeIntroTimer = setTimeout(fadeOutHomeIntro, finalFadeOurHomeIntroSeconds * millisecondsPerSecond)
 // homeIntro.setAttribute("class", "animate__animated animate__fadeInDown");
 
 //  clearTimeout(homeIntroTimer);

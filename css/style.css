@@ -19,7 +19,8 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed; /* Fix the background image in place */
     background-size: 100%; /* Scale the background image to 100% of the container */
-
+    /* Border for testing only */ 
+    /* border: 3px dotted cyan ; */
     /* Set the font properties */
     font-family: 'Open Sans', sans-serif; 
     font-weight: 300; 
@@ -46,9 +47,10 @@ h1 {
 /*     color: #6d85a8; */
     color: white;
     /* Border for testing only */ 
-/*     border: 1px solid yellow; */
+    /* border: 1px solid yellow; */
     /* margin-top: 1%; */
     margin-bottom: 70px;
+
 }
 
 /* Set the styles for paragraph elements */
@@ -62,12 +64,15 @@ p {
     /* Border for testing only */ 
     /* border: 1px solid magenta;  */
     z-index: 1;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 1px 3px whitesmoke;
 }
 
 #scrollableArea {
     overflow-y: auto;
     /* max-height: 100%; */
     height: 72%;
+    padding-bottom: 200px;
     /* Border for testing only */ 
     /* border: 10px solid orangered; */
 }
@@ -77,15 +82,20 @@ p {
     font-family: 'Mrs Saint Delafield', cursive;
     font-size: 120px;
     text-align: center;
-    padding: 2%;
+    /* padding: 2%; */
     /* Border for testing only */ 
     /* border: 2px solid greenyellow;   */
     /* margin-top: 100px; */
+    /* color | offset-x | offset-y | blur-radius */
+    text-shadow:  #6d85a8 1px 0 10px;
+
 }
 
 #introParagraphDiv {
+    /* Border for testing only */ 
+    /* border: 2px solid darkorchid; */
 	font-size: larger;
-	margin-top: 10%;
+	margin-top: 1%;
 }
 
 /* Set the styles for the navigation bars */
@@ -164,7 +174,7 @@ p {
 /* Set the styles for #logoBar element */
 #logoBar {
     /* Border for testing only */ 
-/*     border: 1px solid magenta;  */ 
+    /* border: 1px solid magenta;   */
     float: left;
     margin-top: 0;
     width: 100%;
@@ -309,7 +319,7 @@ tfoot {
 @media (max-width: 560px) {
     body {
         /* Background color for testing only */
-        background-color: lightgreen;
+        /* background-color: lightgreen; */
         font-size: 12px;
     }
     p {
@@ -324,19 +334,21 @@ tfoot {
         margin-bottom: -10px;
     }
     .verticalNavBar {
-        border: 1px solid magenta; /* Border style */
+        /* border for testing only */
+        /* border: 1px solid magenta; */
         width: 300px; /* Width value */
         float: right; /* Float value */
     }
     .verticalNavBar ul li {
-        border: 1px solid greenyellow;
+    /* border for testing only */
+        /* border: 1px solid greenyellow; */
         display: block;
         text-align: center;
     }
     .verticalNavBar ul {
         /* Bprder for testing only */
-        border: 10px solid blueviolet;
-        background-color: #f07746; /* Background color */
+        /* border: 10px solid blueviolet; */
+        background-color: #f07746;
         opacity: 0.80;
     }
 }
